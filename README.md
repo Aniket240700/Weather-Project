@@ -8,7 +8,7 @@ Developer
 
 # Tech Stack
 
-React.js
+React.js, Bootstrap
 
 ## Screenshots
 
