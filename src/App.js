@@ -5,6 +5,7 @@ import AddWeather from "./Components/AddWeather";
 import Welcome from "./Components/Welcome";
 import { v4 as uuidv4 } from "uuid";
 import WeatherIcons from "./Components/WeatherIcons";
+import NotFound from "./Components/NotFound";
 
 function App() {
   const [data, setData] = useState([]);
@@ -44,7 +45,10 @@ function App() {
           <WeatherIcons />
         </>
       ) : !fetched ? (
-        <h1>Not found</h1>
+        <div style={{ marginTop: "10rem" }}>
+          {" "}
+          <NotFound />{" "}
+        </div>
       ) : (
         <div>
           <AddWeather city={search} />
